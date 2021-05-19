@@ -1,0 +1,6 @@
+site_name: HomeWork
+nav:
+    - First: index.md
+    - Second: second.md
+    - NOT OPEN: third.md
+theme: mkdocs

@@ -1,0 +1,34 @@
+version: '2.4'
+
+services:
+  managesite:
+    build: ./managesite
+    container_name: managesite
+    healthcheck:
+      test: ls '/site/manage/site/site' | grep --only-matching --perl-regexp 'index.html'
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+       - type: bind
+         source: ./managesite/src/docs
+         target: /site/manage/site/docs/
+       - type: bind
+         source: ./data
+         target: /site/manage/site/site
+
+  nginxsite:
+    image: nginx:1.19.10-alpine
+    container_name: nginxsite
+    depends_on:
+      managesite:
+        condition: service_healthy
+    volumes:
+       - type: bind
+         source: ./nginxsite/src/nginx
+         target: /etc/nginx/conf.d/
+       - type: bind
+         source: ./data
+         target: /site/manage/site/site
+    ports:
+      - 80:8000
