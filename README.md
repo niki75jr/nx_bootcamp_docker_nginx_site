@@ -40,10 +40,9 @@ To change the site content, go to the site management image `docker exec -it man
 
 ### Commands
 
-`docker-compose up -d`  - launch the site in an detached mode\
+`docker-compose up -d`  - launch the site in an detached mode
 
 ### Images
 
- 1. **managesite** (size: **522 MB**)
+ 1. **managesite** (size: **201 MB**)
  2. **nginx:1.19.10-alpine** (size: **22.6 MB**)
-
