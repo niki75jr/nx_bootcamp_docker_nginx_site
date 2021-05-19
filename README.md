@@ -24,9 +24,9 @@
     
 ### Installation
 
-    curl -L https://github.com/niki75jr/nx_bootcamp_nix_diary/archive/main.zip -o main.zip
+    curl -L https://github.com/niki75jr/nx_bootcamp_docker_nginx_site/archive/main.zip -o main.zip
     unzip -q main
-    cd nx_bootcamp_docker_nginx_site
+    cd nx_bootcamp_docker_nginx_site-main
     docker-compose build
 
 ### Launch
@@ -44,6 +44,6 @@ To change the site content, go to the site management image `docker exec -it man
 
 ### Images
 
- 1. **managesize** (size: **22.6 MB**)
+ 1. **managesite** (size: **22.6 MB**)
  2. **nginx:1.19.10-alpine** (size: **522 MB**)
 
