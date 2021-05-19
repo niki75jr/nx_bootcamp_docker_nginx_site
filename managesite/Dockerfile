@@ -12,9 +12,8 @@ COPY ./src/docs/ /site/manage/site/docs/
 COPY ./src/mkdocs.yml /site/manage/site/
 
 RUN mkdocs new site \
-	&& curl https://raw.githubusercontent.com/niki75jr/nx_bootcamp_nix_diary/main/README.md > index.md \
-	&& curl https://raw.githubusercontent.com/niki75jr/nx_bootcamp_docker_nginx_site/main/README.md > second.md
+	&& curl https://raw.githubusercontent.com/niki75jr/nx_bootcamp_nix_diary/main/README.md > /site/manage/site/docs/index.md \
+	&& curl https://raw.githubusercontent.com/niki75jr/nx_bootcamp_docker_nginx_site/main/README.md > /site/manage/site/docs/second.md
 
-WORKDIR /site/manage/site
 
-ENTRYPOINT ["../docker-entrypoint.sh"]
+ENTRYPOINT ["/site/manage/docker-entrypoint.sh"]

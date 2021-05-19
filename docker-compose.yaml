@@ -10,12 +10,7 @@ services:
       timeout: 5s
       retries: 3
     volumes:
-       - type: bind
-         source: ./managesite/src/docs
-         target: /site/manage/site/docs/
-       - type: bind
-         source: ./data
-         target: /site/manage/site/site
+       - ./data:/site/manage/site/site
 
   nginxsite:
     image: nginx:1.19.10-alpine
@@ -32,3 +27,4 @@ services:
          target: /site/manage/site/site
     ports:
       - 80:8000
+      
