@@ -1,5 +1,5 @@
 
-## Homework # 2:  🐳🌐  Docker-Nginx Site
+## Homework #2:  🐳🌐  Docker-Nginx Site
 
 <p align="center">Simple static site ("<a href="https://www.docker.com/" target="_blank">docker</a>" + "<a href="https://nginx.org/en/" target="_blank">nginx</a>" + "<a href="https://www.mkdocs.org/" target="_blank">mkdocs</a>")</p>
 
@@ -24,9 +24,9 @@
     
 ### Installation
 
-    curl -L https://github.com/niki75jr/nx_bootcamp_docker_nginx_site/archive/main.zip -o main.zip
+    curl -L https://github.com/niki75jr/nx_bootcamp_webapp/archive/main.zip -o main.zip
     unzip -q main
-    cd nx_bootcamp_docker_nginx_site-main
+    cd nx_bootcamp_webapp-main
     docker-compose build
 
 ### Launch
