@@ -38,6 +38,8 @@
 To start the site, run the command `docker-compose up -d`, the application will start in detached mode. 
 To change the site content, go to the site management image `docker exec -it managesite bash` and change the content following the <a href="https://www.mkdocs.org/" target="_blank">instructions</a>, or change the contents of the "**data**" directory.
 
+Open the page in the browser at the address `localhost` or the ip address of your host machine.
+
 ### Commands
 
 `docker-compose up -d`  - launch the site in an detached mode
