@@ -7,11 +7,6 @@
 
 ### Requirements (for Ubuntu)
 
-##### Unzip
-   
-    sudo apt update
-    sudo apt install unzip
-
 ##### Docker
    
     sudo apt update
@@ -24,9 +19,8 @@
     
 ### Installation
 
-    curl -L https://github.com/niki75jr/nx_bootcamp_webapp/archive/main.zip -o main.zip
-    unzip -q main
-    cd nx_bootcamp_webapp-main
+    curl -L https://github.com/niki75jr/nx_bootcamp_webapp/archive/refs/tags/v0.1.1.tar.gz | tar xz
+    cd nx_bootcamp_webapp-0.1.1
     docker-compose build
 
 ### Launch
