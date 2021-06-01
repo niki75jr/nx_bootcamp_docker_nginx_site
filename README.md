@@ -5,7 +5,7 @@
 
 ### Installation
 
-    wget https://github.com/niki75jr/nx_bootcamp_webapp/blob/jenkins/init_script.sh
+    wget https://raw.githubusercontent.com/niki75jr/nx_bootcamp_webapp/jenkins/init_script.sh
     chmod +x init_script.sh
     ./init_script.sh
 
