@@ -6,9 +6,9 @@ services:
     container_name: managesite
     healthcheck:
       test: ls '/site/manage/site/site' | grep --only-matching --perl-regexp 'index.html'
-      interval: 10s
-      timeout: 5s
-      retries: 3
+      interval: 3s
+      timeout: 4s
+      retries: 5
     volumes:
        - ./data:/site/manage/site/site
 
