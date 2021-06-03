@@ -12,3 +12,9 @@
 ### Launch
 
  Visit Jenkins on its default port, 8080, using your server domain name or IP address: **http://your_server_ip_or_domain:8080**
+
+ ## Results
+
+**Answer from telegram-bot:**
+
+![Telegram-bot for Jenkins](https://i.imgur.com/FBoesXt.png)
